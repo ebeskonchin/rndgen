@@ -26,6 +26,8 @@ func main() {
 		letter := string(getRandomLetter())
 		print(letter)
 	}
+
+	println()
 }
 
 func getRandomLetter() rune {

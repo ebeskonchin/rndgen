@@ -9,9 +9,19 @@ func Test_getLetterByInt(t *testing.T) {
 		want   rune
 	}{
 		{
-			name:   "last letter must be 9",
+			name:   "9",
 			number: 25 + 25 + 9,
 			want:   '9',
+		},
+		{
+			name:   "Z",
+			number: 25,
+			want:   'Z',
+		},
+		{
+			name:   "z",
+			number: 25 + 25,
+			want:   'z',
 		},
 	}
 	for _, tt := range tests {
